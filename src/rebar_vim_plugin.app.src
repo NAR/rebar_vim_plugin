@@ -1,0 +1,12 @@
+{application, rebar_vim_plugin,
+ [
+  {description, "Vim plugin for rebar"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  rebar
+                 ]},
+  {env, []}
+ ]}.
