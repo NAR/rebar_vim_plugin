@@ -26,8 +26,8 @@
 -export([terminate/2]).
 
 -record(state, {rebar_vim_device :: rebar_vim_io:device(),
-                sources = dict:new() :: dict(),
-                groups = dict:new() :: dict()}).
+                sources = dict:new() :: dict:dict(),
+                groups = dict:new() :: dict:dict()}).
 
 -type state() :: #state{}.
 -type data() :: [{atom(), term()}].

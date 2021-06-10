@@ -36,7 +36,7 @@
 -record(state,  {rebar_vim_device :: rebar_vim_io:device(),
                  suite = undefined :: 'undefined' | {'suite', atom()},
                  file = undefined :: 'undefined' | string(),
-                 dict = undefined :: 'undefined' | dict(),
+                 dict = undefined :: 'undefined' | dict:dict(),
                  group = undefined :: 'undefined' | {'group', atom()},
                  failed = 0 :: non_neg_integer(),
                  skipped = 0 :: non_neg_integer(),

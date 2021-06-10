@@ -28,7 +28,7 @@ module_to_source(Module) ->
              where_is_file(File)
     end.
 
--spec module_to_dict(module()) -> dict().
+-spec module_to_dict(module()) -> dict:dict().
 module_to_dict(Module) ->
     case beam_lookup(Module, abstract_code, raw_abstract_v1) of
          {raw_abstract_v1, AbsForm} ->
